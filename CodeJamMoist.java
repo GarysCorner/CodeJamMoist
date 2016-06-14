@@ -5,7 +5,7 @@ package net.garyscorner.codejammoist;
 //Date:		2016-06-14
 //Desc:		Designed for google apac test "Practice Round APAC test 2016"  Written as practice
 //Problem:	https://code.google.com/codejam/contest/6234486/dashboard#s=p2
-//Results:	
+//Results:	C-small-practice-1.in:213ms		C-small-practice-2.in:217ms  
 
 //Imports here
 import java.io.*;
@@ -15,6 +15,9 @@ import java.io.*;
 public class CodeJamMoist {
 
 	//class variables here
+	
+	private long starttime;
+	
 	private String infileopt; //filename from commandline
 	private String outfileopt;  //"
 	
@@ -28,6 +31,9 @@ public class CodeJamMoist {
 	public static void main(String[] args) {
 		
 		CodeJamMoist prog = new CodeJamMoist();
+		
+		prog.starttime = System.currentTimeMillis();//set starttime
+		
 		prog.initargs(args);  //find the command line args
 		
 		System.err.println("Opening files...");
@@ -44,7 +50,9 @@ public class CodeJamMoist {
 		System.err.println("\nOutputing solution...");
 		prog.writeSolution();
 		
-		System.err.println("Finished!");
+		long totaltime = System.currentTimeMillis() - prog.starttime;
+		
+		System.err.printf("Finished!  Runtime: %1$dms", totaltime);
 		prog.closeFiles();  //close files
 	}
 	
@@ -61,7 +69,7 @@ public class CodeJamMoist {
 			testcase.solve();
 			
 			//output the solution to stderr
-			System.err.printf("Case %1$d solved Ans=%2$d\n", testcase.casenum, testcase.solution);
+			System.err.printf("Case #%1$d solved\tTime=%3$dms\tAns=%2$d\n", testcase.casenum, testcase.solution, testcase.solvetime);
 			
 		}
 	}
@@ -163,7 +171,7 @@ public class CodeJamMoist {
 	private void initargs(String[] args) {
 		
 		if(  2 < args.length || args.length == 0 ) {
-			System.err.println("Program requires 1 or two arguments.  First arg is infile name, 2nd arg is outfile name Stderr by default.");
+			System.err.println("Program requires 1 or 2 arguments.  First arg is infile name, 2nd arg is outfile name Stderr by default.");
 			System.exit(1);  //exit the system if arguments not correct
 		}
 		

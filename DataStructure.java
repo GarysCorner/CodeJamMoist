@@ -18,9 +18,12 @@ public class DataStructure {
 	
 	public int solution = 0;
 	
+	long solvetime;
 	
 	//solve the problem here
 	public void solve() {
+		
+		long starttime = System.currentTimeMillis();
 		
 		int lastcard = 0; //how many to go back
 		
@@ -32,6 +35,9 @@ public class DataStructure {
 				lastcard = i;
 			}
 		}
+		
+		solvetime = System.currentTimeMillis() - starttime;
+		
 	}
 	
 }

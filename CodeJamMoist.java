@@ -4,12 +4,12 @@ package net.garyscorner.codejammoist;
 //Author:	Gary Bezet
 //Date:		2016-06-14
 //Desc:		Designed for google apac test "Practice Round APAC test 2016"  Written as practice
-//Problem:	https://code.google.com/codejam/contest/6234486/dashboard
+//Problem:	https://code.google.com/codejam/contest/6234486/dashboard#s=p2
 //Results:	
 
 //Imports here
 import java.io.*;
-import java.lang.*;
+
 
 
 public class CodeJamMoist {

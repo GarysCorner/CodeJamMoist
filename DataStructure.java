@@ -1,4 +1,4 @@
-package net.garyscorner.codejammoist;
+//package net.garyscorner.codejammoist;
 
 //File:		DataStructure.java
 //FileDesc:	Contains the DataStructure class for our array of problems

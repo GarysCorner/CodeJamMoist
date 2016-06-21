@@ -1,4 +1,4 @@
-package net.garyscorner.codejammoist;
+//package net.garyscorner.codejammoist;
 
 //File:		CodeJamMoist.java
 //Author:	Gary Bezet

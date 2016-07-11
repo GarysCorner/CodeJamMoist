@@ -1,12 +1,6 @@
 #Problem C. Moist
 ##From https://code.google.com/codejam/contest/6234486/dashboard#s=p2
-The contest is over. You will be able to try solving the problems for practice soon.
-Small input 1
-4 points	
-The contest is finished.
-Small input 2
-6 points	
-The contest is finished.
+
 Problem
 
 Moist has a hobby -- collecting figure skating trading cards. His card collection has been growing, and it is now too large to keep in one disorganized pile. Moist needs to sort the cards in alphabetical order, so that he can find the cards that he wants on short notice whenever it is necessary.
@@ -27,7 +21,9 @@ For each test case, output one line containing "Case #x: y", where x is the case
 
 Limits
 
+```
 1 ≤ T ≤ 100.
+```
 Each name will consist of only letters and the space character.
 Each name will contain at most 100 characters.
 No name with start or end with a space.
@@ -35,36 +31,29 @@ No name will appear more than once in the same test case.
 Lexicographically, the space character comes first, then come the upper case letters, then the lower case letters.
 
 Small dataset
-
+```
 1 ≤ N ≤ 10.
-
+```
 Large dataset
-
+```
 1 ≤ N ≤ 100.
-
+```
 Sample
 
 
-###Input
- 
+###Input 
+```
 2
-
 2
-
 Oksana Baiul
-
 Michelle Kwan
-
 3
-
 Elvis Stojko
-
 Evgeni Plushenko
-
 Kristi Yamaguchi
-
+```
 ###Output
+```
 Case #1: 1
-
 Case #2: 0
-
+```

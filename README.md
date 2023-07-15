@@ -1,5 +1,5 @@
-#Problem C. Moist
-##From https://code.google.com/codejam/contest/6234486/dashboard#s=p2
+# Problem C. Moist
+## From https://code.google.com/codejam/contest/6234486/dashboard#s=p2
 
 Problem
 
@@ -41,7 +41,7 @@ Large dataset
 Sample
 
 
-###Input 
+### Input 
 ```
 2
 2
@@ -52,7 +52,7 @@ Elvis Stojko
 Evgeni Plushenko
 Kristi Yamaguchi
 ```
-###Output
+### Output
 ```
 Case #1: 1
 Case #2: 0
